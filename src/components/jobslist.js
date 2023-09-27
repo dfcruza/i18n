@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Job from "./job";
+import { FormattedMessage } from "react-intl";
 
 const JobsList = () => {
   const [offers] = useState([
@@ -34,7 +35,9 @@ const JobsList = () => {
       <table className="table">
         <thead className="thead-dark">
           <tr>
-            <th scope="col">#</th>
+            <th scope="col">
+              <FormattedMessage id="Position" />
+            </th>
             <th scope="col">Position</th>
             <th scope="col">Company</th>
             <th scope="col">Salary</th>
