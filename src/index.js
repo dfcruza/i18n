@@ -3,9 +3,10 @@ import ReactDOM from "react-dom";
 import {IntlProvider} from 'react-intl';
 import JobsList from "./components/jobslist";
 import localeEsMessages from "./locales/es";
+import localeEnMessages from "./locales/en";
 
 ReactDOM.render(
-        <IntlProvider locale="es-ES" messages= {localeEsMessages}>
+        <IntlProvider locale={navigator.language} messages= {navigator.language.startsWith("en")?localeEnMessages:localeEsMessages}>
                 <JobsList/>
         </IntlProvider>, document.getElementById("root")
 );
