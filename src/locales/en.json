@@ -5,5 +5,6 @@
     "City": "City",
     "PublicationDate": "Publication date",
     "views": "Number of views",
-    "millions": "Millions"
+    "millions": "Millions",
+    "million": "Million"
 }

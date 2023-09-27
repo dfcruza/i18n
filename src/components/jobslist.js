@@ -36,7 +36,7 @@ const JobsList = () => {
   return (
     <div>
       <table className="table">
-        <thead className="thead-dark">
+        <thead className={navigator.language.startsWith("en")?"thead-dark":"thead-light"}>
           <tr>
             <th scope="col">#</th>
             <th scope="col">
